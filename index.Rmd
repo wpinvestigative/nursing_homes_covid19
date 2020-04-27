@@ -1,0 +1,39 @@
+---
+title: "Facilities with publicly reported coronavirus cases"
+author: "Joel Jacobs and Debra Cenziper"
+date: "4/27/2020"
+output:
+  html_document:
+    code_folding: hide
+---
+
+Thousands of deaths from the coronavirus have been [linked to nursing homes](https://www.washingtonpost.com/business/2020/04/20/nearly-one-10-nursing-homes-nationwide-report-coronavirus-outbreaks/) in recent weeks, but the federal government and many states have not identified the providers. Through media accounts and state health departments, The Post was able to identify more than 1,800 nursing homes that have had publicly reported cases of the virus among residents or staff as of Tuesday morning. Nearly 42 percent have been cited by inspectors in recent years for more than one infection-control lapse. **There's more information in the [readme]().**
+
+**[Story: Nearly 1 in 10 nursing homes nationwide report coronavirus cases](https://www.washingtonpost.com/business/2020/04/20/nearly-one-10-nursing-homes-nationwide-report-coronavirus-outbreaks/)**
+
+Note: With many states not releasing the names of facilities, the actual number of nursing homes impacted by the virus is likely far higher."
+
+**Source:** Centers for Medicare and Medicaid Services, state and county health departments, media reports				
+
+*Usage:* If you publish anything based on this data set, please credit The Washington Post, link to the original source, and send us an email when it's posted. We want to learn what you discover and will attempt to link to your work as part of cataloguing the impact of this project.
+
+```{r loading, warning=F, message=F}
+library(tidyverse)
+library(DT)
+homes <- read_csv("Nursing home list 4_27 - results-20200427-115904.csv", skip=1)
+
+rownames(homes) <- c()
+
+datatable(homes, extensions = 'Buttons', filter='top',
+    options = list(
+      pageLength = nrow(homes), 
+      autoWidth = TRUE,
+      dom = 'Bfrtip',
+      buttons = c('copy', 'csv', 'excel', 'pdf', 'print')
+  )
+)
+
+
+```
+
+
