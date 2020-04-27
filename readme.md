@@ -1,4 +1,4 @@
-#Coronavirus cases in U.S. nursing homes
+# Coronavirus cases in U.S. nursing homes
 
 The Washington Post’s database contains the names of Medicare-certified nursing homes with at least one reported case of the coronavirus among patients or staff as of April 25, 2020.
 
