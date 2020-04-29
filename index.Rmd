@@ -1,6 +1,6 @@
 ---
 title: "Coronavirus cases in U.S. nursing homes"
-date: "4/27/2020"
+date: "4/29/2020"
 output:
   html_document:
     code_folding: hide
