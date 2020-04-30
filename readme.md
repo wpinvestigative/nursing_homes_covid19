@@ -11,7 +11,7 @@ The Post’s data is not complete. It will be updated weekly as more states begi
 
 Research and Reporting: Joel Jacobs, Shawn Mulcahy, Sidnee King, Alexa Mikhail, Dan Rosenzweig-Ziff, Arnab Mondal, Areeba Shah and Debbie Cenziper
 
-Editing: Ziva Branstetter
+Editing: Ziva Branstetter, Simone Sebastian
 
 [This data is published under an Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license]
 
